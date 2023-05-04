@@ -1,0 +1,15 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#b72025">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/css/<%= css_file %>">
+
+    <% if !js_file.is_empty() { %>
+        <script type="module">
+            import <%= js_file %> from '/static/js/<%= js_file %>.mjs';
+            new <%= js_file %>().init();
+        </script>
+    <% } %>
+
+</head>

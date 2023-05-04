@@ -1,0 +1,86 @@
+body {
+    .slgn {
+        flex-shrink: 0;
+        max-width: 980px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: right;
+        i {
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+    footer {
+        flex-shrink: 0;
+        background-color: #333;
+
+        .footer {
+            max-width: 980px;
+            margin: 0 auto;
+            height: 30px;
+
+            .sub {
+                display: flex;
+                flex-direction: row;
+                color: #FFF;
+                padding: 5px;
+                justify-content: space-between;
+                align-items: center;
+
+                .built-by {
+                    font-size: 13px;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: row;
+
+                    small {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                    a {color: #F90;}
+
+                }
+
+                .nav ul {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5px;
+
+                    li {
+                        &+ li::before {
+                            content: " | ";
+                        }
+                        a {
+                            &.active {
+                                color:orangered;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        .slgn {
+            i {font-size: 3vw;}
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        footer {
+            .footer {
+                height: 50px;
+                .sub {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+}

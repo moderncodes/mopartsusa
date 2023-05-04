@@ -1,0 +1,27 @@
+<div class="slgn">
+    <i>Tires are what we do and all we do, so we do it best!</i>
+</div>
+<footer>
+    <div class="footer">
+        <div class="sub">
+            <div class="built-by">
+                <small>
+                    <span>Built by&nbsp;</span> <a rel="nofollow" href="moderncodes.com" target="_blank">ModernCodes</a><span>
+                </small>
+                <small>
+                    <span>using&nbsp;</span> <img src="/static/img/Rust_programming_language_black_logo_small.jpg" width="20" height="20">
+                </small>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="/"<% if active_link == "home" { %> class="active"<% } %>>Home</a></li>
+                    <li><a href="products"<% if active_link == "products" { %> class="active"<% } %>>Products</a></li>
+                    <li><a href="locations"<% if active_link == "locations" { %> class="active"<% } %>>Locations</a></li>
+                    <li><a href="contact"<% if active_link == "contact" { %> class="active"<% } %>>Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
