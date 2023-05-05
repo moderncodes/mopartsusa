@@ -27,28 +27,28 @@ pub async fn inject_locations() -> Html<String> { render_page(Page::Locations).a
 pub async fn inject_contact()   -> Html<String> { render_page(Page::Contact).await }
 
 async fn render_page(page: Page) -> Html<String> {
-    let (title, css_file, active_link, page_source) = match page {
+    let (title, css_file, js_file,active_link, page_source) = match page {
         Page::Home => {
             let page_data = HomePage { comp_age: Utc::now().year() - 2001, };
-            ("About Us",    "home.min.css",     "home",     page_data.render_once().unwrap(),)
+            ("About Us",    "home.min.css",     "",     "home",     page_data.render_once().unwrap(),)
         }
 
         Page::Products => {
             let page_data = ProductPage {};
-            ("Products",    "products.min.css", "products", page_data.render_once().unwrap(), )
+            ("Products",    "products.min.css", "",     "products", page_data.render_once().unwrap(), )
         }
 
         Page::Locations => {
             let page_data = LocationsPage {};
-            ("Locations",   "locations.min.css","locations",page_data.render_once().unwrap(), )
+            ("Locations",   "locations.min.css","Locations",     "locations",page_data.render_once().unwrap(), )
         }
 
         Page::Contact => {
             let page_data = ContactPage {};
-            ("Contact",     "contact.min.css",  "contact",  page_data.render_once().unwrap(), )
+            ("Contact",     "contact.min.css",  "",     "contact",  page_data.render_once().unwrap(), )
         }
     };
 
-    let full_template = create_full_template(title, css_file, "", active_link, page_source);
+    let full_template = create_full_template(title, css_file, js_file, active_link, page_source);
     Html(full_template.render().unwrap())
 }

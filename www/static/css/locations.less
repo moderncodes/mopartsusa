@@ -1,3 +1,55 @@
 @import "main";
 @import "_header";
 @import "_footer";
+
+body {
+    main {
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            margin: -9px auto 15px;
+            width: 980px;
+
+            figure {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                border: 1px dotted #C8C7C1;
+
+                figcaption {
+                    padding: 20px 10px 10px;
+                    border-bottom: 1px dotted #C8C7C1;
+                    width: 100%;
+                    text-align: center;
+                    font-size: large;
+                }
+
+                .g-map {
+                    height: 375px;
+                    width: 100%;
+                    border-bottom: 1px dotted #C8C7C1;
+                }
+
+                address {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    width: 100%;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    body {
+        main {
+            .container {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
+}
