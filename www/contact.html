@@ -1,0 +1,59 @@
+<div class="container">
+    <section>
+        <h1>GET IN TOUCH</h1>
+        <form id="contact_form">
+            <p>For general inquiries or for additional information use the form below to get in touch.</p>
+            <fieldset class="contact-person">
+                <div class="form-grp">
+                    <label for="full_name">Your full name</label>
+                    <input type="text" id="full_name" name="name" required value="">
+                </div>
+
+                <div class="form-grp">
+                    <label for="email">Your email address</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g email@domain.com" value="">
+                </div>
+
+                <div class="form-grp">
+                    <label for="tel">Your phone number</label>
+                    <input type="tel" id="tel" name="phone" value="">
+                </div>
+
+            </fieldset>
+
+            <fieldset class="contact-purpose">
+                <label>What is the reason for getting in touch?</label>
+                <div class="form-grp">
+                    <input type="radio" id="reason_gen" name="purpose" value="General Enquiry" checked><label for="reason_gen">General Enquiry</label>
+                    <input type="radio" id="reason_web" name="purpose" value="Website Feedback"><label for="reason_web">Website Feedback</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="form-comment">
+                <div class="form-grp">
+                    <label for="info">Please leave your comment</label>
+                    <textarea id="info" name="message" title="" rows="6"></textarea>
+                </div>
+            </fieldset>
+
+            <input type="hidden" id="g_recaptcha_response" name="g_recaptcha_response" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <aside>
+        <h2>OUR ADDRESS</h2>
+        <div class="cont">
+            <h3>Moparts USA, Inc.</h3>
+            <address>
+                <span>7680 Windgate Cir.</span>
+                <span>West Bloomfield, MI 48323</span>
+                <a href="tel:+12486612777">Tel: (248) 661-2777</a>
+                <a href="mailto:genef@mopartsusa.com">genef@mopartsusa.com</a>
+            </address>
+        </div>
+    </aside>
+</div>

@@ -1,6 +1,7 @@
+use axum::response::{Html};
 use chrono::{Utc, Datelike};
 use sailfish::TemplateOnce;
-use axum::response::Html;
+
 use crate::templates::create_full_template;
 
 #[derive(TemplateOnce)]
@@ -45,7 +46,7 @@ async fn render_page(page: Page) -> Html<String> {
 
         Page::Contact => {
             let page_data = ContactPage {};
-            ("Contact",     "contact.min.css",  "",     "contact",  page_data.render_once().unwrap(), )
+            ("Contact",     "contact.min.css",  "Contact",     "contact",  page_data.render_once().unwrap(), )
         }
     };
 

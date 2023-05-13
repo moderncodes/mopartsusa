@@ -1,4 +1,4 @@
-import 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAJi2wHfb7AQ4zl9HPLeAMy24wrSsZMwVI';
+import 'https://maps.googleapis.com/maps/api/js?key=AIzaSyASGYgBONrHLT6c4ZvqH5vKn1XMe3ChKsI';
 
 class Locations {
     constructor() {}
@@ -43,9 +43,9 @@ class Locations {
 
         this.loadMap({
             cont    : document.getElementById('map_canvas_2'),
-            title   : "Retail/Wholesale Store (Tire Clinic)",
-            lat     : 42.6332189,
-            lng     : -83.325959,
+            title   : "Wholesale/Distribution",
+            lat     : 43.730420,
+            lng     : -79.558550,
         });
 
         this.loadMap({
