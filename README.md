@@ -21,6 +21,11 @@ Here's what I'll be using:
 7. [HTTP2](https://en.wikipedia.org/wiki/HTTP/2) I'll include the HTTP/2 protocol for its benefits, such as multiplexing, server push, and header compression.
 8. [Certbot](https://certbot.eff.org/) Certbot will be used to obtain HTTPS certificates, securing encrypted communications.
 
+## Google Cloud (Compute Engine)
+- **Zone**: us-central1-a
+- **Machine type**: e2-micro 0.25-2 vCPU 1 shared core, 1GB memory ~$8.11 per month
+- **Server**: CentOS Stream 9 
+
 While this tech stack might seem overkill for a small project like MopartsUSA, remember that the purpose is educational. 
 This project is an opportunity to dive into the use of Rust and other technologies in a real-world scenario. 
 You will have a better understanding of how these pieces fit together to build a responsive, user-friendly and fast website.
