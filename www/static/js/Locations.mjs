@@ -1,4 +1,4 @@
-import 'https://maps.googleapis.com/maps/api/js?key=AIzaSyASGYgBONrHLT6c4ZvqH5vKn1XMe3ChKsI';
+import 'https://maps.googleapis.com/maps/api/js?key=YOUR_PUB_KEY';
 
 class Locations {
     constructor() {}
